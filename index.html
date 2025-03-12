@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Особняки и усадьбы Санкт-Петербурга">
+    <meta name="keywords" content="особняк, усадьба, Санкт-Петербург, особняк брусницыных, половцова, демидова, кельха, набокова, румянцева, кшесинской, мясникова, казалета, трубецких-нарышкиных">
+    <title>Особняки Усадьбы</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+            <header class="header_container">
+                <div class="header_content">
+                    <picture class="logo_picture">
+                      <source srcset="images/logo_circle_adaptive.svg" media="(max-width: 480px)">
+                      <img class="header_logo_circle" src="images/logo circle.svg" alt="Лого">
+                        
+                    </picture>
+                  <img class="headerlogo" src="images/logo 2 without shadow.svg" id="headerLogo" onmouseover="changeLogo('images/logo_hover without shadow.svg')" onmouseout="resetLogo()">
+                  <button class="header_button">Поддержать</button>
+                  <ul class="items">
+                    <li class="menu_item item-1">Меню</li>
+                    <li class="menu_item item-2">
+                        <span class="language" onmouseover="highlightLanguage(this)" onmouseout="resetLanguages()">Ru</span>
+                        <span class="language" onmouseover="highlightLanguage(this)" onmouseout="resetLanguages()">En</span>
+                        <span class="language" onmouseover="highlightLanguage(this)" onmouseout="resetLanguages()">It</span>
+                    </li>
+                    <li class="menu_item item-3">Поиск</li>
+                  </ul>
+                  <div class="burger_menu">
+                    <img class="burger" src="images/burger menu.svg" alt="меню">
+                  </div>
+                </div>
+            </header>
+            <div class="sightseeing">
+                <div class="link">
+                    <div class="sightseeing-link"><a href="#">
+                        <img src="images/Arrow back.svg" alt="стрелка назад" id="arrow" onmouseover="changeArrow('images/arrow on hover.svg')" onmouseout="resetArrow()">
+                        <span>Достопримечательности</span>
+                       </a>
+                    </div>
+                    <img class="search_adaptive" src="images/search icon.svg">
+                </div>
+                
+                <div class="Tabs">
+                    <ul class="sightseeing-tabs">
+                        <li class="sightseeing-tabs tab-1">Все</li>
+                        <li class="sightseeing-tabs tab-2">Дворцы</li>
+                        <li class="sightseeing-tabs tab-3">Особняки/Усадьбы</li>
+                    </ul>
+                    <img src="images/search icon.svg" alt="поиск" id="search">
+                </div>
+                <div class="sightseeing-cards">
+                  <ol class="sightseeing-cards_grid">
+                    <li class="sightseeing-cards_item nabokov">
+                        <a class="sightseeing-cards_link" href="#">
+                          <img src="images/особняк кельха.jpg" alt="Особняк Набоковых">
+                          <p class="sightseeing-cards_desc">Особняк Набоковых</p>
+                        </a>
+                    </li>
+                    <li class="sightseeing-cards_item demidov">
+                        <a class="sightseeing-cards_link" href="#">
+                          <img src="images/усадьба демидова.jpg" alt="Усадьба Демидова">
+                          <p class="sightseeing-cards_desc">Усадьба Демидова</p>
+                        </a>
+                    </li>
+                    <li class="sightseeing-cards_item brusnicyny">
+                        <a class="sightseeing-cards_link" href="#">
+                          <img src="images/brusniciny1.png" alt="Особняк Брусницыных">
+                          <p class="sightseeing-cards_desc">Особняк Брусницыных</p>
+                        </a>
+                    </li>
+                    <li class="sightseeing-cards_item polovtsov">
+                        <a class="sightseeing-cards_link" href="#">
+                          <img src="images/усадьба демидова.jpg" alt="Особняк Половцова">
+                          <p class="sightseeing-cards_desc">Особняк Половцова</p>
+                        </a>
+                    </li>
+                    <li class="sightseeing-cards_item zubov">
+                        <a class="sightseeing-cards_link" href="#">
+                          <img src="images/особняк мясникова.jpg" alt="Особняк Зубова">
+                          <p class="sightseeing-cards_desc">Особняк Зубова</p>
+                        </a>
+                    </li>
+                    <li class="sightseeing-cards_item petrov">
+                        <a class="sightseeing-cards_link" href="#">
+                          <img src="images/усадьба демидова.jpg" alt="Особняк Петрова">
+                          <p class="sightseeing-cards_desc">Особняк Петрова</p>
+                        </a>
+                    </li>
+                    <li class="sightseeing-cards_item rumyanzev">
+                        <a class="sightseeing-cards_link" href="#">
+                          <img src="images/особняк мясникова.jpg" alt="Особняк Румянцева">
+                          <p class="sightseeing-cards_desc">Особняк Румянцева</p>
+                        </a>
+                    </li>
+                    <li class="sightseeing-cards_item kelha">
+                        <a class="sightseeing-cards_link" href="#">
+                          <img src="images/brusniciny1.png" alt="Особняк Кельха">
+                          <p class="sightseeing-cards_desc">Особняк Кельха</p>
+                        </a>
+                    </li>
+                    <li class="sightseeing-cards_item myasnikova">
+                        <a class="sightseeing-cards_link" href="#">
+                          <img src="images/особняк мясникова.jpg" alt="Особняк Мясникова">
+                          <p class="sightseeing-cards_desc">Особняк Мясникова</p>
+                        </a>
+                    </li>
+                    <li class="sightseeing-cards_item derzhavin">
+                        <a class="sightseeing-cards_link" href="#">
+                          <img src="images/особняк мясникова.jpg" alt="Усадьба Державина">
+                          <p class="sightseeing-cards_desc">Усадьба Державина</p>
+                        </a>
+                    </li>
+                    <li class="sightseeing-cards_item eliseev">
+                        <a class="sightseeing-cards_link" href="#">
+                          <img src="images/brusniciny1.png" alt="Усадьба Елисеевых в Белогорке">
+                          <p class="sightseeing-cards_desc">Усадьба Елисеевых в Белогорке</p>
+                        </a>
+                    </li>
+                    <li class="sightseeing-cards_item trubezkoy">
+                        <a class="sightseeing-cards_link" href="#">
+                          <img src="images/особняк мясникова.jpg" alt="Особняк Трубецких-Нарышкиных">
+                          <p class="sightseeing-cards_desc">Особняк Трубецких-Нарышкиных</p>
+                        </a>
+                    </li>
+                    <li class="sightseeing-cards_item ksechinskaya">
+                        <a class="sightseeing-cards_link" href="#">
+                          <img src="images/особняк демидова.jpg" alt="Оосбняк Кшесинской">
+                          <p class="sightseeing-cards_desc">Оосбняк Кшесинской</p>
+                        </a>
+                    </li>
+                    <li class="sightseeing-cards_item kazalet">
+                        <a class="sightseeing-cards_link" href="#">
+                          <img src="images/особняк демидова.jpg" alt="Особняк Казалета">
+                          <p class="sightseeing-cards_desc">Особняк Казалета</p>
+                        </a>
+                    </li>
+                    <li class="sightseeing-cards_item genrich">
+                        <a class="sightseeing-cards_link" href="#">
+                          <img src="images/особняк мясникова.jpg" alt="Особняк Генриха Гильзе Ван Дер Пальса">
+                          <p class="sightseeing-cards_desc">Особняк Генриха Гильзе Ван Дер Пальса</p>
+                        </a>
+                    </li>
+                    <li class="sightseeing-cards_item buturlina">
+                        <a class="sightseeing-cards_link" href="#">
+                          <img src="images/усадьба демидова.jpg" alt="Особняк Бутурлиной">
+                          <p class="sightseeing-cards_desc">Особняк Бутурлиной</p>
+                        </a>
+                    </li>
+                    <li class="sightseeing-cards_item alexandrino">
+                        <a class="sightseeing-cards_link" href="#">
+                          <img src="images/усадьба демидова.jpg" alt="Усадьба Александрино">
+                          <p class="sightseeing-cards_desc">Усадьба Александрино</p>
+                        </a>
+                    </li>
+                  </ol>
+                </div>
+            </div>
+            <div class="footer">
+              <video class="footer-background" autoplay muted loop id="video">
+                <source src="video/footer.mp4" type="video/mp4">
+              </video>
+              <div class="overlay"></div>
+              <div class="footer_content">
+                <img class="footer_logo" src="images/logo 2 without shadow.svg" id="footerLogo" onmouseover="changeLogo('images/logo_hover without shadow.svg')" onmouseout="resetLogo()">
+                <ul class="footer_links-1">
+                  <li class="footer_links-1 link-1"><a href="" class="project-link" onmouseover="changeText(this, 'С чего всё начиналось')" onmouseout="resetText(this, 'О проекте')">О проекте</a></li>
+                  <li class="footer_links-1 link-2"><a href="" class="project-link" onmouseover="changeText(this, 'Несколько слов')" onmouseout="resetText(this, 'Об авторе')">Об авторе</a></li>
+                  <li class="footer_links-1 link-3"><a href="" class="project-link" onmouseover="changeText(this, 'Может быть познавательно')" onmouseout="resetText(this, 'Страницы истории')">Страницы истории</a></li>
+                  <li class="footer_links-1 link-4"><a href="" class="project-link" onmouseover="changeText(this, 'Ради чего мы здесь')" onmouseout="resetText(this, 'Достопримечательности')">Достопримечательности</a></li>
+                  <li class="footer_links-1 link-5"><a href="" class="project-link" onmouseover="changeText(this, 'Узнать больше')" onmouseout="resetText(this, 'Экскурсии')">Экскурсии</a></li>
+                  <li class="footer_links-1 link-6"><a href="" class="project-link" onmouseover="changeText(this, 'Чтобы не заскучать')" onmouseout="resetText(this, 'Викторины')">Викторины</a></li>
+                  <li class="footer_links-1 link-7"><a href="" class="project-link" onmouseover="changeText(this, 'Что - где - как')" onmouseout="resetText(this, 'В помощь туристам')">В помощь туристам</a></li>
+                  </ul>
+                <ul class="footer_links-2">
+                  <li class="footer_links-2 link-8"><a href="">Хочу всё знать</a></li>
+                  <li class="footer_links-2 link-9"><a href="">Словарик</a></li>
+                  <li class="footer_links-2 link-10"><a href="">РКИ для иностранных туристов</a></li>
+                  <li class="footer_links-2 link-12"><a href="">Квесты</a></li>
+                  <li class="footer_links-2 link-11"><a href="">Программа по сохранению памятников архитектуры</a></li>
+                </ul>
+                <ul class="footer_links-3">
+                  <li class="footer_links-3 link-13"><a href="">Вопросы и предложения |</a></li>
+                  <li class="footer_links-3 link-14"><a href="">Сотрудничество |</a></li>
+                  <li class="footer_links-3 link-15"><a href="">Отзывы |</a></li>
+                  <li class="footer_links-3 link-16"><a href="">Поддержать проект</a></li>
+                </ul>
+                <div class="email"><a href=""></a>vpitere@ya.ru</div>
+                <span class="policy"><a href="">Политика конфиденциальности</a></span>
+                <!-- <img class="line" src="images/Line.svg"> -->
+                <p class="copyright">© 2025 Санкт-Питербурх. Всё о Санкт-Петербурге или почти всё. Все права защищены 
+                    <br>
+                    Любое копирование материалов сайта без разрешения правообладателя запрещено</p>
+              </img>
+            </div>
+    </div>
+</body>
+</html>
